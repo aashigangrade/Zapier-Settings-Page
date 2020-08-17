@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+/*settings_page starts*/
+.settings_page h1{
+    font-weight: 800;
+}
+/*settings_page ends*/
+
+/*.navbar ends*/
+.logo{
+    width: 5%;
+}
+.top-navbar{
+    border-bottom: 1px solid #dce3de;
+}
+.top-navbar .navbar-brand{
+    font-weight: 700;
+}
+/*top nav ends*/
+
+
+/*vertical nav starts*/
+.vertical-nav .list-group-item{
+    border-color: transparent;
+}
+
+.vertical-nav .list-group-item{
+    color: hsla(230,9%,45%,1);
+    font-weight: 400;
+}
+
+.vertical-nav .nav-icons{
+    font-size: 1.5rem;
+    margin-right: 20px;
+}
+
+.vertical-nav-contents h3{
+    font-weight: 600;
+}
+
+.vertical-nav-contents .p-sub{
+    font-size: 1.1rem;
+}
+
+.vertical-nav .list-group-item.active{
+    color: rgb(19, 107, 245);
+    background-color: rgb(243, 248, 255);
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.vertical-nav .list-group-item:hover{
+    color: rgb(19, 107, 245);
+    border-radius: 20px;
+    background-color: rgb(243, 248, 255);
+}
+
+.vertical-nav .right-content{
+    border-left: 1px solid #dce3de;
+}
+
+.vertical-nav .gravatar img{
+    width: 55%;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .vertical-nav .gravatar{
+        text-align: center;
+    }
+  .vertical-nav .gravatar img{
+    width: 35%;
+      
+      margin-bottom: 10px;
+}
+    .member-btn{
+        text-align: center;
+    }
+    .member-btn a{
+        margin: 10px 0;
+    }
+    
+    .members-img{
+        display: none;
+    }
+    
+}
+
+
+/*settings form css starts*/
+.settings label{
+    color:  hsla(230,10%,30%,1);
+    margin-top: 5px;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.settings label small{
+    font-weight: 600;
+}
+
+.settings input{
+    border-color: transparent;
+    background-color: rgb(242, 242, 242);
+}
+.settings select{
+    border-color: transparent;
+    cursor: pointer;
+    background-color: rgb(242, 242, 242);
+}
+
+.settings .required{
+    color: rgb(255, 74, 0);
+    font-weight: 400;
+    margin-left: auto;
+}
+
+.settings .btn-unsubs{
+    background-color:rgb(242, 242, 242);
+    color: hsla(230,9%,45%,1);
+    font-weight: bold;
+}
+.settings .btn-unsubs:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/*form css ends*/
+
+/*accordian css starts*/
+.advancedacc h5{
+    font-size: 1.15rem;
+}
+.advancedacc small{
+    font-size: 0.9rem;
+}
+.collapsible-link {
+    width: 100%;
+    position: relative;
+    text-align: left;
+}
+
+.payment-card{
+    border:  0.5px dashed #c5d1c8;
+}
+
+.payment-card img{
+    width: 15%;
+}
+
+@media only screen and (max-width: 980px) {
+    .payment-card img{
+    width: 10%;
+}
+}
+
+@media only screen and (max-width: 600px) {
+    .payment-card img{
+    width: 20%;
+}
+}
+
+.collapsible-link::before {
+    content: '\f107';
+    position: absolute;
+    top: 50%;
+    right: 0.8rem;
+    transform: translateY(-50%);
+    display: block;
+    font-family: 'FontAwesome';
+    font-size: 1.1rem;
+}
+
+.collapsible-link[aria-expanded='true']::before {
+    content: '\f106';
+}
+.btn-link{
+    text-decoration: none !important;
+}
+.subaccord .collapsible-link::before {
+    content: '\f08e';
+}
+
+@media only screen and (min-width: 1192px) {
+    .update-btn{
+        text-align: center;
+    }   
+}
+
+@media only screen and (max-width: 1192px) {
+    .update-btn{
+        margin-top: 15px;
+    }
+    .usage{
+        float: right;
+    }
+    .data-btns{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .subaccord .collapsible-link::before {
+    content: '';
+}
+    .update-btn{
+        margin-top: 10px;
+    }
+    .advanced h5{
+        font-size: 1rem;
+    }
+    .advanced p{
+        font-size: 0.9rem;
+    }
+    .advanced .btn{
+        font-size: 0.9rem;
+    }
+    
+}
+
+.pull-right{
+    float: right;
+    text-decoration: none !important;
+}
+.pull-right:hover{
+    color: rgb(19, 107, 245) !important;
+}
+
+.advancedacc {
+    transition: all 0.4s;
+}
+
+.advancedacc:hover{
+    box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+}
+.prim-cards:hover{
+    transition: 0.4s;
+    box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+    cursor: pointer;
+}
+/*accordian css ends*/
+
+.icon-round{
+    border-radius: 50% !important;
+}
+.icon-round div{
+    border-radius: 50% !important;
+}
+.billing_icons{
+    background-color: #dadfe2;
+}
+
+.usage-section p:nth-of-type(1){
+    color: hsla(230,8%,60%,1);
+    font-weight: 600;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.payment-content p:nth-of-type(1){
+     color: rgb(53, 65, 71);
+    font-weight: 600;
+}
+
+.payment-content p:nth-of-type(2){
+    font-weight: 400;
+    color: rgb(53, 65, 71);
+    font-size: 0.9rem;
+}
+
+.payment-content select{
+    cursor: pointer;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.usage-section .text-muted{
+    color: #969ea2 !important;
+    font-size: 0.9rem;
+}
+.invoices-content p{
+    color: #969ea2;
+    font-size: 0.9rem;
+}
+.usage-subheads{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(102, 102, 102);
+}
+
+.update-btn{
+    font-size: 0.9rem;
+    color: rgb(53, 65, 71) !important;
+    border-color: rgb(218, 223, 226);
+}
+.members-section h3{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.members-section .btn-dark{
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.members-section .btn{
+    border-radius: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .settings_page h1{
+        font-size: 2rem;
+        font-weight: 400;
+    }   
+    
+    .settings_page h3{
+        font-size: 1.1rem;
+    }
+    .members-section h3{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+}

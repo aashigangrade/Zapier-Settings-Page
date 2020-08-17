@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My Profile | Zapier</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="https://cdn.zapier.com/zapier/images/favicon.ico">
+    
+    <!--    font awesome -->
+    <script src="https://kit.fontawesome.com/d406226362.js" crossorigin="anonymous"></script>
+    
+  </head>
+  <body class="settings_page">
+    <!-- navbar-->
+    <nav class="top-navbar navbar-light navbar-expand-lg fixed-top bg-white">
+      <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" id="collapsible-nav"><span class="navbar-toggler-icon"></span></button>
+      <a href="index.html" class="navbar-brand">
+      <div class="d-inline-flex my-auto">
+          <img class="img-fluid logo d-none d-lg-inline-flex" src="img/logo.png">
+      <div class="my-auto ml-2">Zapier Settings</div>
+      </div> 
+      </a>
+      
+      <div id="navbarSupportedContent" class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <div class="list-group list-group-flush d-block d-lg-none vertical-nav" role="tablist">
+                   <a class="list-group-item list-group-item-action active" data-toggle="list" href="#profile" role="tab" ><div class="d-inline-flex">
+                   <div class="mr-1 my-auto "><i class="nav-icons fa fa-user-circle" aria-hidden="true"></i></div> <div class="my-auto vertical-nav-links">My Profile</div>
+                   </div> </a>
+                   
+                    <a class="list-group-item list-group-item-action " data-toggle="list" href="#email_notifications" role="tab">
+                    <div class="d-inline-flex">
+                        <div class="mr-1 my-auto ">
+                        <i class="nav-icons fa fa-bell" aria-hidden="true"></i>
+                    </div>
+                      <div class="my-auto vertical-nav-links">Email Notifications</div>
+                    </div>
+                    </a>
+                   
+                    <a class="list-group-item list-group-item-action  " data-toggle="list" href="#advanced" role="tab">
+                     <div class="d-inline-flex">
+                        <div class="mr-1 my-auto ">
+                        <i class="my-auto nav-icons fa fa-indent" aria-hidden="true"></i>
+                    </div>
+                      <div class="my-auto vertical-nav-links">Advanced</div>
+                    </div>
+                    </a>
+                    
+                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#data_management" role="tab">
+                       <div class="d-inline-flex">
+                        <div class="mr-1 my-auto ">
+                        <i class="my-auto nav-icons fa fa-cloud" aria-hidden="true"></i>
+                    </div>
+                      <div class="my-auto vertical-nav-links">Data Management</div>
+                    </div>
+                    </a>
+                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#billing_usage" role="tab">
+                    <div class="d-inline-flex">
+                        <div class="mr-1 my-auto ">
+                        <i class="my-auto nav-icons fa fa-credit-card" aria-hidden="true"></i>
+                    </div>
+                      <div class="my-auto vertical-nav-links">Billing and Usage</div>
+                    </div>
+                    </a>
+                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#members" role="tab">
+                    <div class="d-inline-flex">
+                        <div class="mr-1 my-auto ">
+                        <i class="my-auto nav-icons fa fa-users" aria-hidden="true"></i>
+                    </div>
+                      <div class="my-auto vertical-nav-links">Members</div>
+                    </div>
+                    </a>
+                   
+                </div>
+            
+        </ul>
+      </div>
+    </nav>
+<!--    navbar ends-->
+   
+<!--   main section-->
+  <section class="pt-5 vertical-nav">
+      <div class="container-fluid">
+          <div class="row">
+        <div class="col-md-12 col-lg-4 col-xl-3 py-lg-5">
+            
+            <div class="list-group list-group-flush d-none d-lg-block" role="tablist">
+                   
+                   <a class="list-group-item list-group-item-action active mb-2" data-toggle="list" href="#profile" role="tab"><div class="d-inline-flex">
+                   <div class="mr-1 my-auto "><i class="nav-icons fa fa-user-circle" aria-hidden="true"></i></div> <div class="my-auto vertical-nav-links">My Profile</div>
+                   </div> </a>
+                   
+                    <a class="list-group-item list-group-item-action mb-2 " data-toggle="list" href="#email_notifications" role="tab">
+                    <div class="d-inline-flex">
+                        <div class="mr-1 my-auto ">
+                        <i class="nav-icons fa fa-bell" aria-hidden="true"></i>
+                    </div>
+                      <div class="my-auto vertical-nav-links">Email Notifications</div>
+                    </div>
+                    </a>
+                   
+                    <a class="list-group-item list-group-item-action mb-2  " data-toggle="list" href="#advanced" role="tab">
+                     <div class="d-inline-flex">
+                        <div class="mr-1 my-auto ">
+                        <i class="my-auto nav-icons fa fa-indent" aria-hidden="true"></i>
+                    </div>
+                      <div class="my-auto vertical-nav-links">Advanced</div>
+                    </div>
+                    </a>
+                    
+                    <a class="list-group-item list-group-item-action mb-2" data-toggle="list" href="#data_management" role="tab">
+                       <div class="d-inline-flex">
+                        <div class="mr-1 my-auto ">
+                        <i class="my-auto nav-icons fa fa-cloud" aria-hidden="true"></i>
+                    </div>
+                      <div class="my-auto vertical-nav-links">Data Management</div>
+                    </div>
+                    </a>
+                    <a class="list-group-item list-group-item-action mb-2" data-toggle="list" href="#billing_usage" role="tab">
+                    <div class="d-inline-flex">
+                        <div class="mr-1 my-auto ">
+                        <i class="nav-icons fa fa-credit-card" aria-hidden="true"></i>
+                    </div>
+                      <div class="my-auto vertical-nav-links">Billing and Usage</div>
+                    </div>
+                    </a>
+                    <a class="list-group-item list-group-item-action mb-2" data-toggle="list" href="#members" role="tab">
+                    <div class="d-inline-flex">
+                        <div class="mr-1 my-auto ">
+                        <i class="nav-icons fa fa-users" aria-hidden="true"></i>
+                    </div>
+                      <div class="my-auto vertical-nav-links">Members</div>
+                    </div>
+                    </a>
+                </div>
+            
+        </div>
+
+        <div class="col-md-12 col-lg-8 col-xl-9 right-content py-4 py-lg-5">
+            <div class="tab-content">
+<!--                profile section-->
+                <div class="tab-pane vertical-nav-contents fade show active" id="profile" role="tabpanel">
+                <div class="col-xl-8 col-md-11">
+                    <h1><strong>My Profile</strong></h1>
+                 <div class="card mt-5">
+                  <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-2 gravatar">
+                            <img class="img-fluid" src="img/users.png">
+                        </div>
+                        <div class="col-md-10 text-center">
+                            <p class="mb-0">We use Gravatar, a service that associates an avatar image with your email address. <a href="#">Change your Gravatar.</a></p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                
+<!--                form start here-->
+               <form class="mt-4 settings">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1"><small>Email address</small><span class="ml-1"><small class="required">(required)</small></span></label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1"><small>Password</small><span class="ml-1"><small class="required">(required)</small></span></label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="firstname"><small>First Name</small><span class="ml-1"><small class="required">(required)</small></span></label>
+                    <input type="text" class="form-control" id="firstname" placeholder="">
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="lastname"><small>Last Name</small></label>
+                    <input type="text" class="form-control" id="lastname" placeholder="">
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="companyname"><small>Company Name</small></label>
+                    <input type="text" class="form-control" id="companyname" placeholder="">
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="role"><small>Role</small></label>
+                    <select class="form-control" id="role">
+                      <option> </option>
+                      <option>Large select</option>
+                      <option>Large select</option>
+                    </select>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="timezone"><small>Time Zone</small></label>
+                    <select class="form-control" id="timezone">
+                      <option> </option>
+                      <option>Large select</option>
+                      <option>Large select</option>
+                    </select>
+                    <small class="text-muted">Used when we handle time with no explicit timezone.</small>
+                  </div>
+                  
+                    <div class="text-right">
+                        <button type="submit" class="btn btn-unsubs my-4 py-2 px-4" disabled>Save Changes</button>
+                    </div>
+                </form>
+                
+                </div>
+                </div> 
+                
+<!--                email_notifications section-->
+                <div class="tab-pane vertical-nav-contents fade" id="email_notifications" role="tabpanel">
+                 <div class="col-xl-8 col-md-11">
+                    <h1><strong>Email Notifications</strong></h1>
+                 
+                
+<!--                form start here-->
+               <form class="mt-4 settings">
+                  
+                   <div class="form-group">
+                    <label for="timezone"><small>Activity Summary</small></label>
+                    <select class="form-control" id="timezone">
+                      <option>Weekly</option>
+                      <option>Large select</option>
+                      <option>Large select</option>
+                    </select>
+                    <small class="text-muted">Set a schedule to get a summary of the tasks Zapier has performed.</small>
+                  </div>
+                    
+                  <div class="form-group">
+                    <label for="timezone"><small>Send Alerts on Failed Trigger</small></label>
+                    <select class="form-control" id="timezone">
+                      <option>Repeated</option>
+                      <option>Large select</option>
+                      <option>Large select</option>
+                    </select>
+                    <small class="text-muted">Get alerted when there is an issue with your Zap’s Trigger</small>
+                  </div>    
+                  
+                  <div class="form-group">
+                    <label for="timezone"><small>Send Alerts on Failed Action</small></label>
+                    <select class="form-control" id="timezone">
+                      <option>Always (recommended)</option>
+                      <option>Large select</option>
+                      <option>Large select</option>
+                    </select>
+                    <small class="text-muted">Get alerted when there is an issue with your Zap’s Action</small>
+                  </div>
+                  
+                  
+                </form>
+                
+                <h3 class="text-muted mt-4 font-weight-bold">Email</h3>
+                <form class="settings">
+                    <button type="submit" class="btn btn-unsubs mb-2 d-none d-md-block">Unsubscribe from all</button>
+                    <button type="submit" class="btn btn-block btn-unsubs d-block d-md-none mb-2">Unsubscribe from all</button>
+                    
+                    <div class="form-check mb-2">
+                        <label data-css-reset="true"><span data-css-reset="true"><span data-css-reset="true"><input name="iterablecommunity" tabindex="0" type="checkbox" data-css-reset="true"  value=""></span><span aria-hidden="true" data-css-reset="true"></span></span> Community</label>
+                      </div>
+                      
+                      <div class="form-check mb-2">
+                        <label data-css-reset="true"><span data-css-reset="true"><span data-css-reset="true"><input name="iterablecommunity" tabindex="0" type="checkbox" data-css-reset="true"  value=""></span><span aria-hidden="true" data-css-reset="true"></span></span> Community</label>
+                      </div>
+                      
+                      <div class="form-check mb-2">
+                        <label data-css-reset="true"><span data-css-reset="true"><span data-css-reset="true"><input name="iterablecommunity" tabindex="0" type="checkbox" data-css-reset="true"  value=""></span><span aria-hidden="true" data-css-reset="true"></span></span> Community</label>
+                      </div>
+                      <div class="form-check mb-2">
+                        <label data-css-reset="true"><span data-css-reset="true"><span data-css-reset="true"><input name="iterablecommunity" tabindex="0" type="checkbox" data-css-reset="true"  value=""></span><span aria-hidden="true" data-css-reset="true"></span></span> Community</label>
+                      </div>
+                      
+                </form>
+                </div>
+                
+                
+                </div> 
+                
+<!--                advanced section-->
+               <div class="tab-pane vertical-nav-contents fade" id="advanced" role="tabpanel">
+                 <div class="col-xl-10">
+                    <h1><strong>Advanced</strong></h1>
+                    <div class="row mt-3 advanced">
+                        <div class="col-lg-12 mx-auto">
+                            <!-- Accordion -->
+                            <div id="accordionExample" class="accordion ">
+
+                                <!-- Advanced-prim-accord item 1 -->
+                                <div class="card border-0 my-3 advancedacc">
+                                    <div id="headingOne" class="card-header border-0">
+                                        <h2 class="mb-0">
+                                            <button type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="btn btn-link text-dark font-weight-bold text-capitalize collapsible-link">
+                                                
+                                            <div>
+                                                <h5 class="mb-0"><strong>Two Factor Authentication</strong></h5>
+                                                <small class="text-muted">Disabled</small>
+                                            </div>
+                                                    
+                                                
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample" class="collapse">
+                                        <div class="card-body p-4">
+                                            
+                                         <!-- Accordion item 1 -->
+                                    <div class="card mt-3 prim-cards border-0">
+                                        <div id="headingOne" class="card-header subaccord  border-0">
+                                            <h2 class="mb-0">
+                                                <a href="#"  class="btn btn-link text-dark  text-capitalize collapsible-link">
+                                                    <div class="d-inline-flex">
+                                                        <div class="icon mr-3 my-auto">
+                                                            <i class="fa fa-file-text text-primary fa-2x" aria-hidden="true"></i>
+                                                        </div>
+                                                        <div>
+                                                            <h5 class="mb-0"><strong>Two Factor Authentication</strong></h5>
+                                                            <small class="text-muted">Everything you'll need to know for set-up</small>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </h2>
+                                        </div>
+                                        
+                                    </div><!-- End -->
+                                        <a class="text-muted pull-right" href="#"><small class="font-weight-bold">DISMISS</small></a>
+                                        <p class="my-5">Add an extra layer of security to your Zapier account by requiring access to your phone or mobile device. Once enabled, your account is protected (even if your password is lost or stolen) by requiring both your password and an authentication code from your mobile device in order to log into your Zapier account.
+                                        <br>Two-Factor Authentication is not enabled for this account.</p>
+                                        <button type="submit" class="btn btn-primary btn-lg"><strong>Setup Two-Factor Authentication</strong></button>
+                                        </div>
+                                        
+                                    </div>
+                                </div><!-- End -->
+
+                            <!--   Advanced-prim-accord  item 2-->
+                            <div class="card border-0 my-3 advancedacc">
+                                    <div id="headingtwo" class="card-header border-0">
+                                        <h2 class="mb-0">
+                                            <button type="button" data-toggle="collapse" data-target="#collapsetwo" aria-expanded="true" aria-controls="collapsetwo" class="btn btn-link text-dark font-weight-bold text-capitalize collapsible-link">
+                                                
+                                            <div>
+                                                <h5 class="mb-0"><strong>Two Factor Authentication</strong></h5>
+                                                <small class="text-muted">Disabled</small>
+                                            </div>
+                                                    
+                                                
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapsetwo" aria-labelledby="headingtwo" data-parent="#accordionExample" class="collapse">
+                                        <div class="card-body p-4">
+                                            
+                                         <!-- Accordion item 1 -->
+                                    <div class="card mt-3 prim-cards border-0">
+                                        <div id="headingOne" class="card-header subaccord  border-0">
+                                            <h2 class="mb-0">
+                                                <a href="#"  class="btn btn-link text-dark  text-capitalize collapsible-link">
+                                                    <div class="d-inline-flex">
+                                                        <div class="icon mr-3 my-auto">
+                                                            <i class="fa fa-file-text text-primary fa-2x" aria-hidden="true"></i>
+                                                        </div>
+                                                        <div>
+                                                            <h5 class="mb-0"><strong>Two Factor Authentication</strong></h5>
+                                                            <small class="text-muted">Everything you'll need to know for set-up</small>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </h2>
+                                        </div>
+                                        
+                                    </div><!-- End -->
+                                        <a class="text-muted pull-right" href="#"><small class="font-weight-bold">DISMISS</small></a>
+                                        <p class="my-5">Add an extra layer of security to your Zapier account by requiring access to your phone or mobile device. Once enabled, your account is protected (even if your password is lost or stolen) by requiring both your password and an authentication code from your mobile device in order to log into your Zapier account.
+                                        <br>Two-Factor Authentication is not enabled for this account.</p>
+                                        <button type="submit" class="btn btn-primary btn-lg"><strong>Setup Two-Factor Authentication</strong></button>
+                                        </div>
+                                        
+                                    </div>
+                                </div><!-- End -->
+
+                            <!--   Advanced-prim-accord  item 3-->
+                            <div class="card border-0 my-3 advancedacc">
+                                    <div id="headingthree" class="card-header border-0">
+                                        <h2 class="mb-0">
+                                            <button type="button" data-toggle="collapse" data-target="#collapsethree" aria-expanded="true" aria-controls="collapsethree" class="btn btn-link text-dark font-weight-bold text-capitalize collapsible-link">
+                                                
+                                            <div>
+                                                <h5 class="mb-0"><strong>Two Factor Authentication</strong></h5>
+                                                <small class="text-muted">Disabled</small>
+                                            </div>
+                                                    
+                                                
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapsethree" aria-labelledby="headingthree" data-parent="#accordionExample" class="collapse">
+                                        <div class="card-body p-4">
+                                            
+                                         <!-- Accordion item 1 -->
+                                    <div class="card mt-3 prim-cards border-0">
+                                        <div id="headingOne" class="card-header subaccord  border-0">
+                                            <h2 class="mb-0">
+                                                <a href="#"  class="btn btn-link text-dark  text-capitalize collapsible-link">
+                                                    <div class="d-inline-flex">
+                                                        <div class="icon mr-3 my-auto">
+                                                            <i class="fa fa-file-text text-primary fa-2x" aria-hidden="true"></i>
+                                                        </div>
+                                                        <div>
+                                                            <h5 class="mb-0"><strong>Two Factor Authentication</strong></h5>
+                                                            <small class="text-muted">Everything you'll need to know for set-up</small>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </h2>
+                                        </div>
+                                        
+                                    </div><!-- End -->
+                                        <a class="text-muted pull-right" href="#"><small class="font-weight-bold">DISMISS</small></a>
+                                        <p class="my-5">Add an extra layer of security to your Zapier account by requiring access to your phone or mobile device. Once enabled, your account is protected (even if your password is lost or stolen) by requiring both your password and an authentication code from your mobile device in order to log into your Zapier account.
+                                        <br>Two-Factor Authentication is not enabled for this account.</p>
+                                        <button type="submit" class="btn btn-primary btn-lg"><strong>Setup Two-Factor Authentication</strong></button>
+                                        </div>
+                                        
+                                    </div>
+                                </div><!-- End -->
+
+                            <!--   Advanced-prim-accord  item 4-->
+                            <div class="card border-0 my-3 advancedacc">
+                                    <div id="headingfour" class="card-header border-0">
+                                        <h2 class="mb-0">
+                                            <button type="button" data-toggle="collapse" data-target="#collapsefour" aria-expanded="true" aria-controls="collapsefour" class="btn btn-link text-dark font-weight-bold text-capitalize collapsible-link">
+                                                
+                                            <div>
+                                                <h5 class="mb-0"><strong>Two Factor Authentication</strong></h5>
+                                                <small class="text-muted">Disabled</small>
+                                            </div>
+                                                    
+                                                
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapsefour" aria-labelledby="headingfour" data-parent="#accordionExample" class="collapse">
+                                        <div class="card-body p-4">
+                                            
+                                         <!-- Accordion item 1 -->
+                                    <div class="card mt-3 prim-cards border-0">
+                                        <div id="headingOne" class="card-header subaccord  border-0">
+                                            <h2 class="mb-0">
+                                                <a href="#"  class="btn btn-link text-dark  text-capitalize collapsible-link">
+                                                    <div class="d-inline-flex">
+                                                        <div class="icon mr-3 my-auto">
+                                                            <i class="fa fa-file-text text-primary fa-2x" aria-hidden="true"></i>
+                                                        </div>
+                                                        <div>
+                                                            <h5 class="mb-0"><strong>Two Factor Authentication</strong></h5>
+                                                            <small class="text-muted">Everything you'll need to know for set-up</small>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </h2>
+                                        </div>
+                                        
+                                    </div><!-- End -->
+                                        <a class="text-muted pull-right" href="#"><small class="font-weight-bold">DISMISS</small></a>
+                                        <p class="my-5">Add an extra layer of security to your Zapier account by requiring access to your phone or mobile device. Once enabled, your account is protected (even if your password is lost or stolen) by requiring both your password and an authentication code from your mobile device in order to log into your Zapier account.
+                                        <br>Two-Factor Authentication is not enabled for this account.</p>
+                                        <button type="submit" class="btn btn-primary btn-lg"><strong>Setup Two-Factor Authentication</strong></button>
+                                        </div>
+                                        
+                                    </div>
+                                </div><!-- End -->
+                                
+                                
+                            <!--   Advanced-prim-accord  item 5-->
+                            <div class="card border-0 my-3 advancedacc">
+                                    <div id="headingfive" class="card-header border-0">
+                                        <h2 class="mb-0">
+                                            <button type="button" data-toggle="collapse" data-target="#collapsefive" aria-expanded="true" aria-controls="collapsefive" class="btn btn-link text-dark font-weight-bold text-capitalize collapsible-link">
+                                                
+                                            <div>
+                                                <h5 class="mb-0"><strong>Two Factor Authentication</strong></h5>
+                                                <small class="text-muted">Disabled</small>
+                                            </div>
+                                                    
+                                                
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapsefive" aria-labelledby="headingfive" data-parent="#accordionExample" class="collapse">
+                                        <div class="card-body p-4">
+                                            
+                                         <!-- Accordion item 1 -->
+                                    <div class="card mt-3 prim-cards border-0">
+                                        <div id="headingOne" class="card-header subaccord  border-0">
+                                            <h2 class="mb-0">
+                                                <a href="#"  class="btn btn-link text-dark  text-capitalize collapsible-link">
+                                                    <div class="d-inline-flex">
+                                                        <div class="icon mr-3 my-auto">
+                                                            <i class="fa fa-file-text text-primary fa-2x" aria-hidden="true"></i>
+                                                        </div>
+                                                        <div>
+                                                            <h5 class="mb-0"><strong>Two Factor Authentication</strong></h5>
+                                                            <small class="text-muted">Everything you'll need to know for set-up</small>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </h2>
+                                        </div>
+                                        
+                                    </div><!-- End -->
+                                        <a class="text-muted pull-right" href="#"><small class="font-weight-bold">DISMISS</small></a>
+                                        <p class="my-5">Add an extra layer of security to your Zapier account by requiring access to your phone or mobile device. Once enabled, your account is protected (even if your password is lost or stolen) by requiring both your password and an authentication code from your mobile device in order to log into your Zapier account.
+                                        <br>Two-Factor Authentication is not enabled for this account.</p>
+                                        <button type="submit" class="btn btn-primary btn-lg"><strong>Setup Two-Factor Authentication</strong></button>
+                                        </div>
+                                        
+                                    </div>
+                                </div><!-- End -->
+                                
+
+                            </div><!-- accordian ends -->
+                         </div>
+                     </div>
+                        
+                 
+                 </div>
+                </div>
+                
+<!--                data management-->
+               <div class="tab-pane vertical-nav-contents fade " id="data_management" role="tabpanel">
+                <div class="col-xl-10">
+                    <h1 class="mb-5"><strong>Data Management</strong></h1>
+                     <h3 class="text-muted font-weight-bold">My Data</h3>
+                     <p>To comply with regulation and to ensure customers have primary control over their data, we‘ve added some quick tools to help manage your data.</p>
+                          <!-- Accordion item 1 -->
+                                          <!-- Accordion item 1 -->
+                                    <div class="card mt-3 prim-cards border-0">
+                                        <div id="headingOne" class="card-header advancedacc subaccord  border-0">
+                                            <h2 class="mb-0">
+                                                <a href="#" type="button" data-toggle="collapse" data-target="#collapsesub1" aria-expanded="true" aria-controls="collapsesub1" class="btn btn-link text-dark  text-capitalize collapsible-link">
+                                                    <div class="d-inline-flex">
+                                                        <div class="icon mr-3 my-auto">
+                                                            <i class="fa fa-file-text text-primary fa-2x" aria-hidden="true"></i>
+                                                        </div>
+                                                        <div>
+                                                            <h5 class="mb-0"><strong>Read Documentation</strong></h5>
+                                                            <small class="text-muted">Everything you'll need to know for set-up</small>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </h2>
+                                        </div>
+                                        
+                                    </div><!-- End -->
+                                        <a class="text-muted pull-right" href="#"><small class="font-weight-bold">DISMISS</small></a>
+                                        
+                                        <p class="my-5"><div class="card mt-3 prim-cards border-0">
+                                        <div class="card-header subaccord advancedacc border-0">
+                                           
+                                        <div class="row">
+                                            <div class="col-lg-8 col-md-8 d-inline-flex my-auto">
+                                            <div class="icon mr-3 my-auto d-none d-md-block">
+                                                <i class="fa fa-external-link text-muted fa-2x" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <h5 class="mb-0"><strong>Export My Data</strong></h5>
+                                                <small class="text-muted">Everything you'll need to know for set-up</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4  pl-xl-5 my-3 data-btns">
+                                        <a class="btn btn-primary font-weight-bold px-4 py-2 d-none d-md-block" href="#">Export My Data</a> 
+                                        
+<!--                                        btn on small devices-->
+                                        <a class="btn btn-primary font-weight-bold px-4 py-2 btn-unsubs d-block d-md-none" href="#">Export My Data</a> 
+                                        </div>
+                                        </div>
+                                                
+                                            
+                                        </div>
+                                        
+                                    </div><!-- End -->
+                                    </p> 
+                                        
+                                        <p class="my-5"><div class="card mt-3 prim-cards border-0">
+                                        <div class="card-header subaccord advancedacc border-0">
+                                           
+                                        <div class="row">
+                                            <div class="col-lg-8 col-md-8 d-inline-flex my-auto">
+                                            <div class="icon mr-3 my-auto d-none d-md-block">
+                                                <i class="fa fa-trash text-muted fa-2x" aria-hidden="true"></i>
+                                            </div>
+                                            <div>
+                                                <h5 class="mb-0"><strong>Delete My Data</strong></h5>
+                                                <small class="text-muted">Everything you'll need to know for set-up</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4  pl-xl-5 my-3 mr-0 data-btns">
+                                        <a class="btn btn-primary font-weight-bold px-4 py-2 d-none d-md-block" href="#">Delete My Data</a> 
+                                        
+<!--                                        btn on small devices-->
+                                        <a class="btn btn-primary font-weight-bold px-4 py-2 btn-unsubs d-block d-md-none" href="#">Delete My Data</a>  </div>
+                                        </div>
+                                                
+                                            
+                                        </div>
+                                        
+                                    </div><!-- End -->
+                                    </p> 
+                                        
+                      
+                      
+                   </div>
+                </div>
+                
+<!--                billing and usage-->
+               <div class="tab-pane vertical-nav-contents fade " id="billing_usage" role="tabpanel">
+                   <div class="col-xl-11">
+                       <h1 class="mb-4"><strong>Usage</strong></h1>
+                       
+                       <div class="card mb-5">
+                          <div class="card-body p-0 px-3 ">
+                            <div class="row usage-section">
+                                <div class="col-xl-3 col-lg-3 col-md-4 d-inline-flex my-auto mb-lg-0 mt-lg-auto my-xl-auto pt-3 pt-md-0">
+                                    <div class="billing_icons mr-3 my-auto text-muted p-2">
+                                        AG
+                                    </div>
+                                    <div class="my-auto">
+                                        <p class="mb-0">Personal Account</p>
+                                        <p class="mb-0 text-muted">
+                                            Free Plan
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-3 d-inline-flex py-1 py-md-3 py-sm-3">
+                                    <div class="billing_icons icon-round mr-3 my-auto rounded p-2">
+                                        <div class="bg-white p-2 rounded"></div>
+                                    </div>
+                                    <div>
+                                        <p class="mb-0">Tasks</p>
+                                        <small class="mb-0 text-muted">
+                                            0/1000
+                                        </small>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-2 d-inline-flex py-1 py-md-3 py-sm-3">
+                                    <div class="billing_icons icon-round mr-3 my-auto rounded p-2 ">
+                                        <div class="bg-white p-2 rounded"></div>
+                                    </div>
+                                    <div>
+                                        <p class="mb-0">Zaps</p>
+                                        <small class="mb-0 text-muted">
+                                            0/unlimited
+                                        </small>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-3 py-1 py-md-3 py-sm-3 text-lg-center text-sm-right">
+                                    <p class="mb-0">Usage Reset</p>
+                                        <small class="mb-0 text-muted">
+                                            Sep 05, 2020
+                                        </small>
+                                </div>
+                                <div class="col-xl-3 col-md-12 my-auto update-btn text-lg-center text-md-center pb-3 pb-xl-0">
+                                    <a href="#" class="btn btn-light px-4 py-2 update-btn">Change Plan</a>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="card-footer text-muted">
+                            Have questions about your plan? <a href="#" class="text-primary">Learn about plans and pricing.</a>
+                          </div>
+                        </div>
+                       
+                       <h3 class="usage-subheads">
+                           Payment Information
+                       </h3>
+                       <div class="card payment-card mb-5">
+                          <div class="card-body text-center payment-content">
+                            <p class="mb-2">No Payment Info</p>
+                            <p>We accept PayPal, Visa, Mastercard, American Express, Discover or Bank Transfer (ACH).</p>
+                            <div class="d-inline-flex justify-content-center col-lg-8 mx-auto">
+                                <img class="img-fluid p-2" src="img/bank-transfer.svg">
+                                <img class="img-fluid p-2" src="img/maestro.svg">
+                                <img class="img-fluid p-2" src="img/master-card.svg">
+                                <img class="img-fluid p-2" src="img/credit-card-visa.svg">
+                                <img class="img-fluid p-2" src="img/shopify.svg">
+                                
+                            </div>
+                              
+                              <div class="col-md-6 mx-auto mt-3">
+                                  <form>
+                                  <div class="form-group">
+                                    <select class="form-control text-muted" id="exampleFormControlSelect1">
+                                      <option>Add Payment Method</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+                                  </div>
+                              </form>
+                              </div>
+                              
+                          </div>
+                        </div>
+                        
+                        <h3 class="usage-subheads">
+                           Invoice Information
+                       </h3>
+                       <div class="card payment-card mb-5">
+                          <div class="card-body invoices-content">
+                            <div class="row">
+                                <div class="col-md-8 my-auto">
+                                    <p class="text-muted">No invoice company name or email</p>
+                                </div>
+                                <div class="col-md-4 text-center text-lg-right update-btn">
+                                    <a href="#" class="btn btn-light px-4 py-2 update-btn">Update Info</a>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <h3 class="usage-subheads">
+                           Invoices 
+                       </h3>
+                       <div class="card payment-card invoices-content">
+                          <div class="card-body text-center">
+                            <p class="text-muted">No Payment Info</p>
+
+                          </div>
+                        </div>
+            
+            </div>
+        </div>
+      
+                
+<!--                members section-->
+               <div class="tab-pane vertical-nav-contents fade " id="members" role="tabpanel">
+                   <div class="col-xl-10">
+                       <div class="card border-0 shadow my-0 members-section">
+                      <div class="card-body my-0 pt-4 pb-4 py-lg-0 pr-lg-0">
+                        <div class="row">
+                            <div class="col-xl-7 col-lg-7 my-auto">
+                                <h3>Zapier For Teams</h3>
+                                <p class="text-muted">Multiply your productivity. Unlimited users, advanced permissions, and fastest ticket turnaround time. Start your free 14 day trial today.</p>
+                                <div class="settings member-btn text-center row mt-4">
+                                    <div class="col-sm-6 pb-1">
+                                        <a class="font-weight-bold btn btn-dark btn-block" href="#">START TRIAL</a>
+                                    </div>
+                                    <div class="col-sm-6 pb-1">
+                                        <a class="btn btn-unsubs btn-block" href="#">LEARN MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 my-auto members-img d-none d-lg-block">
+                                <img class="img-fluid" src="img/team_upsell@3x.jpg">
+                            </div>
+                      </div>
+                    </div>
+                  </div>
+                
+            </div>
+        </div>
+      
+      </div>
+
+      </div>
+  </section>
+<!--  main section ends-->
+   
+    
+    <!-- JavaScript files-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+    <script src="js/main.js"></script>
+    
+    <script>
+        $('.navbar-collapse a').click(function(){
+            $(".navbar-collapse").collapse('hide');
+        });
+    </script>
+  </body>
+</html>
